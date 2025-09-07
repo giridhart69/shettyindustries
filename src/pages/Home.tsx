@@ -33,7 +33,7 @@ const Home = () => {
             </Link>
             <Link
               to="/blazehigh-farms"
-              className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium text-sm rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-white hover:bg-gray-200 text-black font-medium text-sm rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Discover Our Farms
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -43,7 +43,8 @@ const Home = () => {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-16 bg-gray-900">
+      <section id="products" className="py-16 bg-black">
+        <hr className="border-t border-white opacity-40 mb-8 w-1/2 mx-auto" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-white mb-4">
@@ -122,6 +123,7 @@ const Home = () => {
 
       {/* About Section */}
       <section id="about" className="py-16 bg-black">
+         <hr className="border-t border-white opacity-40 mb-8 w-1/2 mx-auto" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-white mb-4">
@@ -164,7 +166,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-gray-900 border border-gray-600 rounded-xl p-6 md:p-8">
+          <div className="bg-black border border-gray-600 rounded-xl p-6 md:p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-medium text-white mb-4">
@@ -193,7 +195,8 @@ const Home = () => {
       </section>
 
       {/* Privacy Policy Section */}
-      <section id="privacy-policy" className="py-16 bg-gray-900">
+      <section id="privacy-policy" className="py-16 bg-black">
+         <hr className="border-t border-white opacity-40 mb-8 w-1/2 mx-auto" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <Shield className="h-12 w-12 text-white mx-auto mb-4" />
