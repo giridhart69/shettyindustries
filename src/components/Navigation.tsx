@@ -14,8 +14,15 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="bg-white p-2 rounded-lg group-hover:bg-gray-200 transition-all duration-300">
-              <Building2 className="h-6 w-6 text-black" />
+            <div className="p-0 rounded-lg">
+              <img
+                src="src/images/siTP.png"
+                alt="Shetty Industries Logo"
+                width={36}
+                height={36}
+                className="block"
+                style={{ objectFit: 'contain' }}
+              />
             </div>
             <div>
               <h1 className="text-xl font-semibold text-white">
