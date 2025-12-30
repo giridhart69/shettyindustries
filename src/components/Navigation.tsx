@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Building2 } from 'lucide-react';
-import siTP from '../images/siTP.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +16,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="p-0 rounded-lg">
               <img
-                src={siTP}
+                src="src/images/siTP.png"
                 alt="Shetty Industries Logo"
                 width={36}
                 height={36}
