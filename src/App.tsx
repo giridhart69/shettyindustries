@@ -7,7 +7,7 @@ import BlazeHighFarms from './pages/BlazeHighFarms';
 
 function App() {
   return (
-    <Router basename="/shettyindustries">
+    <Router>
       <div className="min-h-screen bg-black">
         <Navigation />
         <Routes>
