@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Building2 } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-
-  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
@@ -34,14 +31,14 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
+            <NavLink
               to="/"
-              className={`text-sm font-medium transition-all duration-300 hover:text-white ${
-                isActive('/') ? 'text-white border-b border-white pb-1' : 'text-gray-300'
+              className={({ isActive }) => `text-sm font-medium transition-all duration-300 hover:text-white ${
+                isActive ? 'text-white border-b border-white pb-1' : 'text-gray-300'
               }`}
             >
               Home
-            </Link>
+            </NavLink>
             
             <div className="relative group">
               <button className="text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 flex items-center">
@@ -49,20 +46,20 @@ const Navigation = () => {
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-black shadow-xl rounded-lg border border-gray-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
                 <div className="p-2">
-                  <Link
+                  <NavLink
                     to="/blazehigh-ai"
                     className="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md transition-all duration-200"
                   >
                     <div className="font-medium text-sm">BlazeHigh.AI</div>
                     <div className="text-xs text-gray-500">Automation Services</div>
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to="/blazehigh-farms"
                     className="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md transition-all duration-200"
                   >
                     <div className="font-medium text-sm">BlazeHigh Farms</div>
                     <div className="text-xs text-gray-500">Export Quality Produce</div>
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -83,32 +80,32 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden border-t border-gray-700 py-4">
             <div className="space-y-2">
-              <Link
+              <NavLink
                 to="/"
-                className={`block px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
-                  isActive('/') ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-800'
+                className={({ isActive }) => `block px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+                  isActive ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-800'
                 }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
-              </Link>
+              </NavLink>
               <div className="px-4 py-2">
                 <div className="text-sm font-medium text-gray-500 mb-2">Products</div>
                 <div className="space-y-1 ml-4">
-                  <Link
+                  <NavLink
                     to="/blazehigh-ai"
                     className="block py-2 text-sm text-gray-400 hover:text-white transition-colors duration-200"
                     onClick={() => setIsOpen(false)}
                   >
                     BlazeHigh.AI
-                  </Link>
-                  <Link
+                  </NavLink>
+                  <NavLink
                     to="/blazehigh-farms"
                     className="block py-2 text-sm text-gray-400 hover:text-white transition-colors duration-200"
                     onClick={() => setIsOpen(false)}
                   >
                     BlazeHigh Farms
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </div>
