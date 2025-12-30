@@ -16,7 +16,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="p-0 rounded-lg">
               <img
-                src="src/images/siTP.png"
+                src="../src/images/siTP.png"
                 alt="Shetty Industries Logo"
                 width={36}
                 height={36}
