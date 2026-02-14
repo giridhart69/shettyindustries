@@ -44,7 +44,7 @@ const Navigation = () => {
               <button className="text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 flex items-center">
                 Products
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-black shadow-xl rounded-lg border border-gray-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+              <div className="absolute bottom-full right-0 mb-2 w-64 bg-black shadow-xl rounded-lg border border-gray-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
                 <div className="p-2">
                   <NavLink
                     to="/blazehigh-ai"
