@@ -4,7 +4,7 @@ import { ArrowRight, Bot, Wheat, Shield, Globe, Award, Users } from 'lucide-reac
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-black text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black/60"></div>
@@ -23,7 +23,7 @@ const Home = () => {
             Pioneering excellence across technology and agriculture. 
             From cutting-edge automation to premium agricultural exports.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               to="/blazehigh-ai"
               className="inline-flex items-center px-6 py-3 bg-white hover:bg-gray-200 text-black font-medium text-sm rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
