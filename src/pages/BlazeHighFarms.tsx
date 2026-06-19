@@ -56,7 +56,7 @@ const BlazeHighFarms = () => {
             <div 
               className="h-64 bg-cover bg-center rounded-lg shadow-xl border-4 border-green-700"
               style={{
-                backgroundImage: "url('https://www.theigc.org/sites/default/files/styles/max_1640x922/public/2021/02/India_Farming.webp?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')"
+                backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/4/41/India_Farming.jpg')"
               }}
             ></div>
             <div>
